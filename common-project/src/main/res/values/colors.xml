@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主色调(蓝)
+    <color name="app_main_color">#20E4FE</color>
+    &lt;!&ndash; 辅助色(黄) &ndash;&gt;
+    <color name="app_sub_color">#FEDD50</color>
+    &lt;!&ndash; 备用色(橙：money相关) &ndash;&gt;
+    <color name="app_money_color">#FEDD50</color>
+
+    &lt;!&ndash; 页面底色(灰) &ndash;&gt;
+    <color name="app_bg_color">#f7f7f7</color>
+    <color name="gray_f7">#f7f7f7</color>
+    <color name="gray_66">#666666</color>
+
+    &lt;!&ndash; 字体默认(黑) &ndash;&gt;
+    <color name="txt_default_color">#4A4A4A</color>
+    &lt;!&ndash; 字体默认(灰) || hint(灰) &ndash;&gt;
+    <color name="txt_default_gray">#9B9B9B</color>
+    &lt;!&ndash; 字体默认(浅灰) &ndash;&gt;
+    <color name="txt_default_light_gray">#D8D8D8</color>
+    &lt;!&ndash; hint(浅灰) &ndash;&gt;
+    <color name="txt_hint_light_gray">#E0E0E0</color>
+
+
+    <color name="btn_gray_color">#CCCCCC</color>-->
+
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_white">#b2FFFFFF</color>
+
+</resources>
