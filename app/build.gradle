@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "test.com.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("test.jks")
+            storePassword "123456"
+            keyAlias "test"
+            keyPassword "123456"
+        }
+        debug {
+            storeFile file("test.jks")
+            storePassword "123456"
+            keyAlias "test"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "String", "SERVER_CFG", "\"formal\""  //正式版
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "String", "SERVER_CFG", "\"prepare\""  //测试版
+        }
+
+    }
+
+}
+
+dependencies {
+    api project(':common-project')
+}
+
+
